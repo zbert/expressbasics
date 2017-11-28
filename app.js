@@ -42,7 +42,7 @@ const deletePerson = (id) => {
 }
 
 const addPerson = (id, person) => db.people.push({
-  id: id,
+  id: parseInt(id),
   name: person.name
 })
 
